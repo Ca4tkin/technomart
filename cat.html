@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Technomart Catalogue</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Cuprum|Open+Sans+Condensed:300|Open+Sans:600,500,400,300&subset=latin,cyrillic"> 
+    <script>  
+   function priceChange() {
+    price = document.getElementById("price").value;
+    document.getElementById("price-top").innerHTML = price;
+   }
+  </script>
+</head>
+<body>
+    <div class="header">
+        <div class="header-top">
+            <div class="layout-central-wrapper">
+                <a class="logo" href="/">Техномарт</a>
+                <form class="search" action="http://www.balabanovich.ru/tehnomart/#" method="get">
+                    <input type="text" name="search" id="top-search" placeholder="Поиск"> 
+                </form>
+                <div class="bookmark">Закладки: 0</div>
+                <div class="basket">Корзина: 0</div>
+                <a href="" class="chekout">Оформить заказ</a>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="layout-central-wrapper">
+                <div class="header-information clearfix">
+                    <div class="header-information-description">
+                        <span>Интернет-магазин строительных материалов<br> и инструментов для                                       ремонта</span>
+                    </div>
+                    <div class="header-information-contacts">
+                       <p>+7 (495) 555-05-55</p>
+                       <p>Москва, ул. Строителей, д. 15</p>  
+                    </div>
+                    <div class="header-information-account-menu">
+                       <a href="" class="header-login">Войти</a>
+                       <a href="" class="header-registration">Регистрация</a>  
+                    </div>   
+                </div>
+                <ul class="top-menu">
+                    <li><a href="">Главная</a></li>
+                    <li><a href="">Компания</a></li>
+                    <li><a href="">Каталог</a></li>
+                    <li><a href="">Новости</a></li>
+                    <li><a href="">Спецпредложения</a></li>
+                    <li><a href="">Доставка</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>     
+            </div>
+        </div>    
+    </div>
+   
+    <div class="content-cat">
+        <div class="layout-central-wrapper">
+            <div class="breadcrumbs">
+                <img src="./img/technomart-icon-home.png" alt="home">
+                <span class="next-item">Каталог</span> 
+                <span class="next-item">Инструмент</span>
+                <span class="next-item">Перфораторы</span>
+            </div>
+            <h1 class="cat-title">Перфораторы</h1>
+            <div class="filters">
+                <div class="filters-type">
+                    <span>Фильтр:</span>
+                </div>
+                <div class="price-block">
+                    <p class="filters-title">Цена:</p>
+                    <div class="price-img-range">
+                        <input type="range" min="0" max="30000" step="1000" value="1000" id="price" oninput="priceChange()">
+                    </div>
+                    <p class="price-range"><span>0</span> &mdash; <span id="price-top">1 000</span></p>
+                </div>
+                <div class="producers-block">
+                    <p class="filters-title">Производители:</p>
+                    <ul class="filters-producers">
+                        <li>
+                            <input type="checkbox" name="producers" id="Bosch" checked><label for="Bosch">Bosch</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="producers" id="Interskol"><label for="Interskol">Интерскол</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="producers" id="Makita" checked><label for="Makita">Makita</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="producers" id="Dewalt"><label for="Dewalt">Dewalt</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="producers" id="Hitachi"><label for="Hitachi">Hitachi</label>
+                        </li>
+                    </ul>
+                </div>
+                <p class="filters-title">Питание:</p>
+                <ul class="filters-power">
+                    <li>
+                        <input type="radio" name="power" id="accumul" checked><label for="accumul">Аккумуляторные</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="power" id="network"><label for="network">Сетевые</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="cat">
+                <div class="filters-type">
+                    <span>Сортировка:</span> 
+                    <a href="" class="active">по цене</a> 
+                    <a href="">по типу</a> 
+                    <a href="">по функционалу</a>
+                    <div class="filters-up active"></div>
+                    <div class="filters-down"></div>
+                </div>
+                <div class="items">
+                    <div class="content-block-item">
+                            <div class="actions">
+                                <a href="" class="buy">Купить</a>
+                                <a href="" class="item-bookmark">В закладки</a>
+                            </div>
+                            <div class="item-image"><img src="./img/technomart-index_10.jpg" alt="BOSCH BFG 9000"></div>
+                            <span class="item-name">Перфоратор BOSCH BFG 9000</span> 
+                            <span class="item-old-price">22 500 Р.</span>
+                            <p class="item-price">15 500 Р.</p>   
+                    </div>
+                    <div class="content-block-item ">
+                            <div class="actions">
+                                <a href="" class="buy">Купить</a>
+                                <a href="" class="item-bookmark">В закладки</a>
+                            </div>
+                            <div class="item-image"><img src="./img/technomart-index_07.jpg" alt="BOSCH BFG 9000"></div>
+                            <span class="item-name">Перфоратор BOSCH BFG 9000</span> 
+                            <span class="item-old-price">30 500 Р.</span>
+                            <p class="item-price">25 500 Р.</p>   
+                    </div>
+                    <div class="content-block-item ">
+                            <div class="actions">
+                                <a href="" class="buy">Купить</a>
+                                <a href="" class="item-bookmark">В закладки</a>
+                            </div>
+                            <div class="flag flag-new"></div>
+                            <div class="item-image"><img src="./img/technomart-index_10.jpg" alt="BOSCH BFG 9000"></div>
+                            <span class="item-name">Перфоратор BOSCH BFG 9000</span> 
+                            <span class="item-old-price"></span>
+                            <p class="item-price">12 500 Р.</p>   
+                    </div>
+                    <div class="content-block-item">
+                            <div class="actions">
+                                <a href="" class="buy">Купить</a>
+                                <a href="" class="item-bookmark">В закладки</a>
+                            </div>
+                            <div class="item-image"><img src="./img/technomart-index_10.jpg" alt="BOSCH BFG 9000"></div>
+                            <span class="item-name">Перфоратор BOSCH BFG 9000</span> 
+                            <span class="item-old-price">22 500 Р.</span>
+                            <p class="item-price">15 500 Р.</p>   
+                    </div>
+                    <div class="content-block-item ">
+                            <div class="actions">
+                                <a href="" class="buy">Купить</a>
+                                <a href="" class="item-bookmark">В закладки</a>
+                            </div>
+                            <div class="flag flag-new"></div>
+                            <div class="item-image"><img src="./img/technomart-index_07.jpg" alt="BOSCH BFG 9000"></div>
+                            <span class="item-name">Перфоратор BOSCH BFG 9000</span> 
+                            <span class="item-old-price">30 500 Р.</span>
+                            <p class="item-price">25 500 Р.</p>   
+                    </div>
+                    <div class="content-block-item ">
+                            <div class="actions">
+                                <a href="" class="buy">Купить</a>
+                                <a href="" class="item-bookmark">В закладки</a>
+                            </div>
+                            <div class="item-image"><img src="./img/technomart-index_10.jpg" alt="BOSCH BFG 9000"></div>
+                            <span class="item-name">Перфоратор BOSCH BFG 9000</span> 
+                            <span class="item-old-price"></span>
+                            <p class="item-price">12 500 Р.</p>   
+                    </div>
+                    <div class="content-block-item">
+                            <div class="actions">
+                                <a href="" class="buy">Купить</a>
+                                <a href="" class="item-bookmark">В закладки</a>
+                            </div>
+                            <div class="flag flag-new"></div>
+                            <div class="item-image"><img src="./img/technomart-index_10.jpg" alt="BOSCH BFG 9000"></div>
+                            <span class="item-name">Перфоратор BOSCH BFG 9000</span> 
+                            <span class="item-old-price">22 500 Р.</span>
+                            <p class="item-price">15 500 Р.</p>   
+                    </div>
+                    <div class="content-block-item ">
+                            <div class="actions">
+                                <a href="" class="buy">Купить</a>
+                                <a href="" class="item-bookmark">В закладки</a>
+                            </div>
+                            <div class="item-image"><img src="./img/technomart-index_07.jpg" alt="BOSCH BFG 9000"></div>
+                            <span class="item-name">Перфоратор BOSCH BFG 9000</span> 
+                            <span class="item-old-price">30 500 Р.</span>
+                            <p class="item-price">25 500 Р.</p>   
+                    </div>
+                    <div class="content-block-item ">
+                            <div class="actions">
+                                <a href="" class="buy">Купить</a>
+                                <a href="" class="item-bookmark">В закладки</a>
+                            </div>
+                            <div class="item-image"><img src="./img/technomart-index_10.jpg" alt="BOSCH BFG 9000"></div>
+                            <span class="item-name">Перфоратор BOSCH BFG 9000</span> 
+                            <span class="item-old-price"></span>
+                            <p class="item-price">12 500 Р.</p>   
+                    </div>
+                </div>
+                <div class="cat-page-count">
+                    <a href="" class="active">1</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                    <a href="" class="next">следующая</a>
+                </div>
+            </div>
+        </div> 
+        <div class="clearfix"></div>
+        <div class="cat-information">
+            <div class="layout-central-wrapper">
+                <h2>Пара слов о перфораторах</h2>
+                <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+    Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+            </div>
+        </div>  
+    </div>
+
+    <div class="footer">    
+        <div class="footer-top">
+            <div class="layout-central-wrapper">
+                <div class="clearfix">
+                    <div class="footer-top-left">
+                        <a class="footer-logo" href="/">Техномарт</a>
+                        <div class="footer-contacts">
+                            <p>г. Москва, ул. Строителей, 15<br>+7 (495) 555-05-55</p>
+                        </div>
+                    </div>
+                    <ul class="footer-menu menu-first">
+                        <li><a href="">Компания</a></li>
+                        <li><a href="">Новости</a></li>
+                        <li><a href="">Каталог</a></li>
+                        <li><a href="">Доставка</a></li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
+                    <ul class="footer-menu menu-second">
+                        <li><a href="">Материалы</a></li>
+                        <li><a href="">Техника</a></li>
+                        <li><a href="">Инструмент</a></li>
+                        <li><a href="">Спецпредложения</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="layout-central-wrapper clearfix">
+                <div class="footer-copyright">
+                    <p>&copy;2010-2013 Компания &laquo;Техномарт&raquo;</p>
+                    <p>Все права защищены</p>
+                </div>
+                <div class="footer-social-buttons">
+                    <a href="http://vk.com" class="btn-social-vk"></a>
+                    <a href="http://facebook.com" class="btn-social-fb"></a>
+                    <a href="http://instagram.com" class="btn-social-inst"></a>    
+                </div>
+                <div class="footer-feedback">
+                    <p>Обратная связь: <a href="">info@technomart.ru</a></p>
+                </div>
+                <div class="footer-design">
+                    <p>Дизайн сайта - <br><a href="">www.Glukhanko.ru</a></p>
+                </div>
+            </div>
+        </div>
+    </div> 
+      
+</body>
+</html>
